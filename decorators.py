@@ -1,3 +1,5 @@
+__all__ = ['debug_logger']
+
 def debug_logger(function):
     import logging
 

@@ -1,3 +1,5 @@
+__all__ = ['color']
+
 class color:
 
     @staticmethod
