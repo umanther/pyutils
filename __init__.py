@@ -1,3 +1,3 @@
-import decorators
-from getkey import getKey
-import term_colors
+from .decorators import *
+from .getkey import getKey
+from .term_colors import *
