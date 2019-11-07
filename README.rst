@@ -11,7 +11,5 @@ Source
 ------
 Github_
 
-
-
 .. |licence-img| image:: https://img.shields.io/github/license/umanther/ubil-tools?style=plastic
 .. _Github: https://github.com/umanther/ubil-tools
