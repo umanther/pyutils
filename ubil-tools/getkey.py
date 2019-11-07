@@ -1,5 +1,3 @@
-__all__ = ['getKey']
-
 class _Getch:
     """Gets a single character from standard input.  Does not echo to the screen."""
 
@@ -45,3 +43,4 @@ class _GetchWindows:
 
 
 getKey = _Getch()
+__all__ = ['getKey']

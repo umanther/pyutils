@@ -1,5 +1,3 @@
-__all__ = ['color']
-
 class color:
 
     @staticmethod
@@ -91,3 +89,6 @@ class color:
     BG_BR_MAGENTA = '105'
     BG_BR_CYAN = '106'
     BG_BR_WHITE = '107'
+
+
+__all__ = ['color']
