@@ -7,7 +7,7 @@ setuptools.setup(
     name='ubiltools',
     version='1.0.0',
     packages=setuptools.find_packages(),
-    url='https://github.com/umanther/ubil-tools',
+    url='https://github.com/umanther/ubiltools',
     license='',
     author='Geoff Hellstrand',
     author_email='ubil@hotmail.com',
