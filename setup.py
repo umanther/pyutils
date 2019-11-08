@@ -4,7 +4,7 @@ with open('README.rst', 'r') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name='ubil-tools',
+    name='ubiltools',
     version='1.0.0',
     packages=setuptools.find_packages(),
     url='https://github.com/umanther/ubil-tools',
