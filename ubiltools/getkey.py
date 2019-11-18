@@ -1,3 +1,6 @@
+from typing import Callable as _Callable
+
+
 class _Getch:
     """Gets a single character from standard input.  Does not echo to the screen."""
 
@@ -13,9 +16,7 @@ class _Getch:
 
 class _GetchUnix:
     def __init__(self):
-        import sys
-        import tty
-        import termios
+        pass
 
     def __call__(self):
         import sys
@@ -34,7 +35,7 @@ class _GetchUnix:
 
 class _GetchWindows:
     def __init__(self):
-        import msvcrt
+        pass
 
     def __call__(self):
         import msvcrt
@@ -42,5 +43,4 @@ class _GetchWindows:
         return msvcrt.getwch()
 
 
-getKey = _Getch()
-__all__ = ['getKey']
+getKey: _Callable[[], str] = _Getch()

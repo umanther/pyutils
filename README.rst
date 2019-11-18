@@ -1,11 +1,11 @@
 ==========
-ubil-tools
+ubiltools
 ==========
 |licence-img|
 
 Purpose
 =======
-A set of tools that I've built over time that perform useful (mostly) functions that I've used over time
+A set of tools that I've built over time that perform useful (mostly) functions that I've used
 
 Source
 ------
