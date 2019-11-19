@@ -5,7 +5,7 @@ with open('README.rst', 'r') as f:
 
 setuptools.setup(
     name='ubiltools',
-    version='1.0.2',
+    version='1.0.3',
     packages=setuptools.find_packages(),
     url='https://github.com/umanther/ubiltools',
     author='Geoff Hellstrand',
