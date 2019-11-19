@@ -1,7 +1,7 @@
-from collections import UserDict as _UserDict
+import collections as _coll
 
 
-class RevDict(_UserDict):
+class RevDict(_coll.UserDict):
     def __delitem__(self, key):
         value = self.data.pop(key)
         self.data.pop(value)

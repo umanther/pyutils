@@ -1,4 +1,4 @@
-from typing import Callable as _Callable
+import typing as _typ
 
 
 class _Getch:
@@ -43,4 +43,4 @@ class _GetchWindows:
         return msvcrt.getwch()
 
 
-getKey: _Callable[[], str] = _Getch()
+getKey: _typ.Callable[[], str] = _Getch()

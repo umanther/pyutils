@@ -7,6 +7,27 @@ Purpose
 =======
 A set of tools that I've built over time that perform useful (mostly) functions that I've used
 
+Modules
+-------
+1. decorators
+
+   - Function decorators
+#. getkey
+
+   - GetKey function
+#. math
+
+   - Math functions
+#. sc_support
+
+   - SecurityCenter support
+#. structrues
+
+   - Data structures
+#. term_colors
+
+   - Terminal color tool
+
 Source
 ------
 Github_
