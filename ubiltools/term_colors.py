@@ -29,18 +29,18 @@ class Color:
 
     @staticmethod
     def FG_RGB(r: int, g: int, b: int) -> str:
-        r = 255 if r > 255 else r
-        g = 255 if g > 255 else g
-        b = 255 if b > 255 else b
-        r = 0 if r < 0 else r
-        g = 0 if g < 0 else g
-        b = 0 if b < 0 else b
+        r = min(r, 255)
+        g = min(g, 255)
+        b = min(b, 255)
+        r = max(r, 0)
+        g = max(g, 0)
+        b = max(b, 0)
         return f"38;2;{r};{g};{b}"
 
     @staticmethod
     def FG_255(c: int) -> str:
-        c = 255 if c > 255 else c
-        c = 0 if c < 0 else c
+        c = min(c, 255)
+        c = max(c, 0)
         return f"38;5;{c}"
 
     BG_BLACK = '40'
@@ -54,18 +54,18 @@ class Color:
 
     @staticmethod
     def BG_RGB(r: int, g: int, b: int) -> str:
-        r = 255 if r > 255 else r
-        g = 255 if g > 255 else g
-        b = 255 if b > 255 else b
-        r = 0 if r < 0 else r
-        g = 0 if g < 0 else g
-        b = 0 if b < 0 else b
+        r = min(r, 255)
+        g = min(g, 255)
+        b = min(b, 255)
+        r = max(r, 0)
+        g = max(g, 0)
+        b = max(b, 0)
         return f"48;2;{r};{g};{b}"
 
     @staticmethod
     def BG_255(c: int) -> str:
-        c = 255 if c > 255 else c
-        c = 0 if c < 0 else c
+        c = min(c, 255)
+        c = max(c, 0)
         return f"48;5;{c}"
 
     FRAMED = '51'

@@ -8,10 +8,13 @@ def debug_logger(function):
 
     def inner(*args, **kwargs):
         _logger.info(
-            'EXECUTING: {}({}{}{})'.format(function.__name__,
-                                           ', '.join(args),
-                                           ', ' if len(args) != 0 and len(kwargs) != 0 else '',
-                                           ', '.join(['%s=%r' % x for x in kwargs.items()])))
+            'EXECUTING: {}({}{}{})'.format(
+                function.__name__,
+                ', '.join(args),
+                ', ' if args and kwargs else '',
+                ', '.join(['%s=%r' % x for x in kwargs.items()]),
+            )
+        )
         return function(*args, **kwargs)
 
     return inner
